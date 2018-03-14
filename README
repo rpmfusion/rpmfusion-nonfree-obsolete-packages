@@ -1,0 +1,2 @@
+This package exists only to obsolete old packages which need to be removed from
+the distribution in order to avoid dependency issues during upgrades.
