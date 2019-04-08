@@ -1,6 +1,6 @@
 Name:           rpmfusion-nonfree-obsolete-packages
-Version:        28
-Release:        2%{?dist}
+Version:        30
+Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-nonfree
 
 License:        MIT
@@ -50,6 +50,9 @@ cp -p %{SOURCE0} .
 
 
 %changelog
+* Mon Apr 08 2019 Leigh Scott <leigh123linux@googlemail.com> - 30-1
+- Bump version to 30
+
 * Mon Apr 08 2019 Leigh Scott <leigh123linux@googlemail.com> - 28-2
 - Add comical, gens-gs, Mosaic and pcsx2
 
