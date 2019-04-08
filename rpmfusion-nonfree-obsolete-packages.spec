@@ -1,6 +1,6 @@
 Name:           rpmfusion-nonfree-obsolete-packages
 Version:        28
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-nonfree
 
 License:        MIT
@@ -16,7 +16,18 @@ Obsoletes: kmod-nvidia-304xx < 304.137-100
 # Last build xorg-x11-drv-nvidia-304xx-304.137-2.fc28
 Provides: xorg-x11-drv-nvidia-304xx = 304.137-100
 Obsoletes: xorg-x11-drv-nvidia-304xx < 304.137-100
-
+# Last build comical-0.8-19.fc29
+Provides: comical = 0.8-20
+Obsoletes: comical < 0.8-20
+# Last build gens-gs-2.16.7-11.fc29
+Provides: gens-gs = 2.16.7-12
+Obsoletes: gens-gs < 2.16.7-12
+# Last build Mosaic-2.7-0.12.b5.fc29
+Provides: Mosaic = 2.7-0.13
+Obsoletes: Mosaic < 2.7-0.13
+# Last build pcsx2-1.4-11.fc29
+Provides: pcsx2 = 1.4-12
+Obsoletes: pcsx2 < 1.4-12
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -39,5 +50,8 @@ cp -p %{SOURCE0} .
 
 
 %changelog
+* Mon Apr 08 2019 Leigh Scott <leigh123linux@googlemail.com> - 28-2
+- Add comical, gens-gs, Mosaic and pcsx2
+
 * Tue Mar 13 2018 Nicolas Chauvet <kwizart@gmail.com> - 28-1
 - Initial spec file
