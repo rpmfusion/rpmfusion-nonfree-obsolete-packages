@@ -1,5 +1,5 @@
 Name:           rpmfusion-nonfree-obsolete-packages
-Version:        30
+Version:        31
 Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-nonfree
 
@@ -28,6 +28,9 @@ Obsoletes: Mosaic < 2.7-0.13
 # Last build pcsx2-1.4-11.fc29
 Provides: pcsx2 = 1.4-12
 Obsoletes: pcsx2 < 1.4-12
+# Last build gstreamer-plugins-bad-nonfree-0.10.23-10.fc31
+Provides: gstreamer-plugins-bad-nonfree = 0.10.23-11
+Obsoletes: gstreamer-plugins-bad-nonfree < 0.10.23-11
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -50,6 +53,10 @@ cp -p %{SOURCE0} .
 
 
 %changelog
+* Fri Aug 23 2019 Leigh Scott <leigh123linux@googlemail.com> - 31-1
+- Bump version to 31
+- Add gstreamer-plugins-bad-nonfree
+
 * Mon Apr 08 2019 Leigh Scott <leigh123linux@googlemail.com> - 30-1
 - Bump version to 30
 
