@@ -1,5 +1,5 @@
 Name:           rpmfusion-nonfree-obsolete-packages
-Version:        31
+Version:        37
 Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-nonfree
 
@@ -31,6 +31,9 @@ Obsoletes: pcsx2 < 1.4-12
 # Last build gstreamer-plugins-bad-nonfree-0.10.23-10.fc31
 Provides: gstreamer-plugins-bad-nonfree = 0.10.23-11
 Obsoletes: gstreamer-plugins-bad-nonfree < 0.10.23-11
+# Last build nautilus-dropbox-2020.03.04-3.fc35
+Provides: nautilus-dropbox = 2020.03.04-4
+Obsoletes: nautilus-dropbox < 2020.03.04-4
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -53,6 +56,10 @@ cp -p %{SOURCE0} .
 
 
 %changelog
+* Mon Sep 12 2022 Alexander Ploumistos <alexpl@fedoraproject.org> - 37-1
+- Add nautilus-dropbox
+- Bump version to 37
+
 * Fri Aug 23 2019 Leigh Scott <leigh123linux@googlemail.com> - 31-1
 - Bump version to 31
 - Add gstreamer-plugins-bad-nonfree
