@@ -1,6 +1,6 @@
 Name:           rpmfusion-nonfree-obsolete-packages
-Version:        31
-Release:        1%{?dist}
+Version:        37
+Release:        2%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-nonfree
 
 License:        MIT
@@ -25,12 +25,17 @@ Obsoletes: gens-gs < 2.16.7-12
 # Last build Mosaic-2.7-0.12.b5.fc29
 Provides: Mosaic = 2.7-0.13
 Obsoletes: Mosaic < 2.7-0.13
-# Last build pcsx2-1.4-11.fc29
-Provides: pcsx2 = 1.4-12
-Obsoletes: pcsx2 < 1.4-12
 # Last build gstreamer-plugins-bad-nonfree-0.10.23-10.fc31
 Provides: gstreamer-plugins-bad-nonfree = 0.10.23-11
 Obsoletes: gstreamer-plugins-bad-nonfree < 0.10.23-11
+# Last build nautilus-dropbox-2020.03.04-3.fc35
+Provides: nautilus-dropbox = 2020.03.04-4
+Obsoletes: nautilus-dropbox < 2020.03.04-4
+Provides: dropbox = 2020.03.04-4
+Obsoletes: dropbox < 2020.03.04-4
+# Last build caja-dropbox-1.26.0-2.fc37
+Provides: caja-dropbox = 1.26.0-3
+Obsoletes: caja-dropbox < 1.26.0-3
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -53,6 +58,14 @@ cp -p %{SOURCE0} .
 
 
 %changelog
+* Tue Sep 13 2022 Leigh Scott <leigh123linux@gmail.com> - 37-2
+- Add caja-dropbox
+- Remove pcsx2
+
+* Mon Sep 12 2022 Alexander Ploumistos <alexpl@fedoraproject.org> - 37-1
+- Add nautilus-dropbox and it's sub-package
+- Bump version to 37
+
 * Fri Aug 23 2019 Leigh Scott <leigh123linux@googlemail.com> - 31-1
 - Bump version to 31
 - Add gstreamer-plugins-bad-nonfree
