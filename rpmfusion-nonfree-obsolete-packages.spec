@@ -1,6 +1,6 @@
 Name:           rpmfusion-nonfree-obsolete-packages
 Version:        37
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-nonfree
 
 License:        MIT
@@ -36,6 +36,16 @@ Obsoletes: dropbox < 2020.03.04-4
 # Last build caja-dropbox-1.26.0-2.fc37
 Provides: caja-dropbox = 1.26.0-3
 Obsoletes: caja-dropbox < 1.26.0-3
+# Last build libspotify-12.1.51-11.fc36
+Provides: libspotify = 12.1.51-12
+Obsoletes: libspotify < 12.1.51-12
+# Last build python-pyspotify-2.1.3-2.fc35
+Provides: python-pyspotify = 2.1.3-3
+Obsoletes: python-pyspotify < 2.1.3-3
+# Last build mopidy-spotify-4.1.1-1.fc35
+Provides: mopidy-spotify = 4.1.1-2
+Obsoletes: mopidy-spotify < 4.1.1-2
+
 
 %description
 This package exists only to obsolete other packages which need to be removed
@@ -58,6 +68,9 @@ cp -p %{SOURCE0} .
 
 
 %changelog
+* Fri Sep 23 2022 Leigh Scott <leigh123linux@gmail.com> - 37-3
+- Add libspotify, mopidy-spotify and python-pyspotify
+
 * Tue Sep 13 2022 Leigh Scott <leigh123linux@gmail.com> - 37-2
 - Add caja-dropbox
 - Remove pcsx2
