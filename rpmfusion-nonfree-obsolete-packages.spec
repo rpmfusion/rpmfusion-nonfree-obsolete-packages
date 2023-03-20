@@ -1,6 +1,6 @@
 Name:           rpmfusion-nonfree-obsolete-packages
-Version:        37
-Release:        3%{?dist}
+Version:        38
+Release:        1%{?dist}
 Summary:        A package to obsolete retired packages from rpmfusion-nonfree
 
 License:        MIT
@@ -28,11 +28,6 @@ Obsoletes: Mosaic < 2.7-0.13
 # Last build gstreamer-plugins-bad-nonfree-0.10.23-10.fc31
 Provides: gstreamer-plugins-bad-nonfree = 0.10.23-11
 Obsoletes: gstreamer-plugins-bad-nonfree < 0.10.23-11
-# Last build nautilus-dropbox-2020.03.04-3.fc35
-Provides: nautilus-dropbox = 2020.03.04-4
-Obsoletes: nautilus-dropbox < 2020.03.04-4
-Provides: dropbox = 2020.03.04-4
-Obsoletes: dropbox < 2020.03.04-4
 # Last build caja-dropbox-1.26.0-2.fc37
 Provides: caja-dropbox = 1.26.0-3
 Obsoletes: caja-dropbox < 1.26.0-3
@@ -68,6 +63,9 @@ cp -p %{SOURCE0} .
 
 
 %changelog
+* Mon Mar 20 2023 Leigh Scott <leigh123linux@gmail.com> - 38-1
+- Remove nautilus-dropbox and it's sub-package (rfbz#6558)
+
 * Fri Sep 23 2022 Leigh Scott <leigh123linux@gmail.com> - 37-3
 - Add libspotify, mopidy-spotify and python-pyspotify
 
